@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Create New Contact</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="">
+            <label for="first_name" id="first_name">First Name</label>
+            <input type="text" id="first_name_inp">
+            <label for="last_name" id="last_name">Last Name</label>
+            <input type="text" id="last_name_inp">
+            <label for="phone_number" id="phone_number">Phone Number</label>
+            <input type="number" id="phone_number_inp">
+            <label for="email" id="email">Email</label>
+            <input type="email" id="email_inp">
+
+            <button id="createBtn">Create</button>
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6c4078df96.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="../JS/createContact.js"></script>
+</body>
+
+</html>
