@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                         </div>
                     </div>
                     <div class="contact-icons">
-                        <span><i class="fa-solid fa-phone"></i></span>
-                        <span><i class="fa-solid fa-message"></i></span>
-                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span><a href="tel:${contact.phone_number}"><i class="fa-solid fa-phone"></i></a></span>
+                        <span><a href=""><i class="fa-solid fa-message"></i></a></span>
+                        <span><a href="mailto:${contact.email}"><i class="fa-solid fa-envelope"></i></a></span>
                     </div>
                 </div>`
         })
