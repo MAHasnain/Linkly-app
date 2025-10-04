@@ -122,7 +122,7 @@
     --primary_blue: #2563EB;
     --secondary_gray: #6B7280;
     --accent_green: #10b981;
-    --bg-color_offwhite: #edf0ff;
+    --bg-color_offwhite: #f1f1f0;
 }
 
 
@@ -165,7 +165,8 @@ html, body {
     border-radius: 10px;
     font-size: x-large;
 }
-.addContact_btn:hover{
+
+.addContact_btn:hover {
     background-color: #5a606c;
 }
 
@@ -246,4 +247,103 @@ html, body {
 
 a {
     color: white;
+}
+
+/* Contact details page */
+.contact_detail_container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contact_container {
+    padding: 50px;
+    background-color: var(--bg-color_offwhite);
+    border-radius: 20px;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.actionButtons button {
+    background-color: var(--secondary_gray);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: x-large;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.contact_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* create new Contact */
+.createContact_container {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#createContactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-elem {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 40%; */
+}
+
+.form-elem input {
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    box-shadow: 0px 0px 8px -5px rgba(0, 0, 0, 0.75);
+}
+
+.form-elem span {
+    color: red;
+    font-size: larger;
+}
+
+#createBtn {
+    background-color: var(--secondary_gray);
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: white;
+    box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.75);
+}
+
+#createBtn:hover {
+    background-color: #5a606c;
+    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.75);
+
 }
