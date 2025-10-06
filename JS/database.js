@@ -128,7 +128,7 @@ export const retrieveSession = async () => {
 
         if (!session) {
             console.log("You're not logged In.");
-            window.location.href = '../HTML/login.html';
+            // window.location.href = '../HTML/auth.html';
         }
         return session
 
@@ -144,6 +144,21 @@ export const getLoggedInUser = async () => {
 
         const obj = await supabaseClient.auth.getUser();
         return obj;
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+export const logoutUser = async () => {
+    try {
+        const { error } = await supabaseClient.auth.signOut('local')
+
+        console.log(error);
+        if (!error) {
+            window.location.href = `../HTML/login.html`
+            return;
+        }
 
     } catch (error) {
         console.error(error);
