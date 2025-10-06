@@ -347,3 +347,33 @@ a {
     box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.75);
 
 }
+
+.newContactBtn {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Auth */
+
+.logout-btn {
+    background-color: var(--secondary_gray);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    padding: 8px;
+    /* width: 50px;
+    height: 50px; */
+    border: none;
+}
+
+.logout-btn:hover {
+    background-color: #5a606c;
+
+}
+
+a {
+    text-decoration: none;
+
+}
