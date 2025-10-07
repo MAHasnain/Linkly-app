@@ -15,6 +15,7 @@ loginBtn.addEventListener("click", async (e) => {
         })
         // console.log(loggedInUser);
 
+
     } catch (error) {
         console.error(error)
     }
