@@ -80,12 +80,12 @@ export const deleteContact = async (id) => {
 
 // Authentication 
 
-export const registerUser = async (data) => {
+export const registerUser = async (userData) => {
 
     try {
 
-        const obj = await supabaseClient.auth.signUp(data);
-        return obj;
+        const { data, error } = await supabaseClient.auth.signUp(userData)
+        return data;
 
     } catch (error) {
         console.error(error)
@@ -105,7 +105,7 @@ export const signInUser = async (data) => {
         }
 
         if (data) {
-            window.location.href = "/index.html"
+            window.location.href = `/index.html`;
         }
 
         return obj;
