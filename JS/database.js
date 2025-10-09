@@ -85,7 +85,13 @@ export const registerUser = async (userData) => {
     try {
 
         const { data, error } = await supabaseClient.auth.signUp(userData)
-        return data;
+
+        // return data;
+        const { user, session } = data;
+        if (user) {
+
+            window.location.href = `../HTML/login.html`;
+        };
 
     } catch (error) {
         console.error(error)
@@ -98,9 +104,9 @@ export const signInUser = async (data) => {
 
         const { userObj, error: err } = await supabaseClient.auth.signInWithPassword(data);
 
-        if (err) {
-            console.log("userObj ", userObj)
-            console.log("data ", data)
+        if (err.code === `invalid_credentials`) {
+            console.log("error ", err)
+            // console.log("data ", data)
             return err
         }
 

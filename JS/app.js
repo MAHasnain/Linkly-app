@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                     window.location.href = `/HTML/contactDetail.html?id=${contactId}`;
                 })
             })
+        } else {
+            window.location.href = `../HTML/login.html`;
         }
     } catch (error) {
         console.error(error);
